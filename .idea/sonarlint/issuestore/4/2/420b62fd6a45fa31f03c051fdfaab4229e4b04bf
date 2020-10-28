@@ -1,0 +1,19 @@
+
+R
+java:S1854
+"5Remove this useless assignment to local variable "x".(ÑÃ×ô8±çÃÑ.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(‚Ä¢üÿÿÿÿ8¿ª‚ÄÑ.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(›ƒì8ÊÿˆÄÑ.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Áß‡Ü8ø´ñÃÑ.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ìšöÈÿÿÿÿÿ8ÊÿˆÄÑ.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(”¨†8ÊÿˆÄÑ.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(êà¥øÿÿÿÿ8ÊÿˆÄÑ.
+C
+java:S1481
+"&Remove this unused "x" local variable.(ÑÃ×ô8±çÃÑ.
+W
+java:S1854"5Remove this useless assignment to local variable "d".( ÍÉéıÿÿÿÿ8•ÕõÃÑ.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(°±ôµÿÿÿÿÿ8ÊÿˆÄÑ.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ìšöÈÿÿÿÿÿ8ÊÿˆÄÑ.
+H
+java:S1481"&Remove this unused "d" local variable.( ÍÉéıÿÿÿÿ8•ÕõÃÑ.
