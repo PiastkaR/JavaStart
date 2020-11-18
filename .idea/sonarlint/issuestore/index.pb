@@ -75,3 +75,8 @@ h
 8src/main/java/com/javastart/sysin/UstawieniaLokalne.java,3\f\3faa8a2961b45443cf777b6b46095581366d269b
 h
 8src/main/java/com/javastart/sysin/flipacoin/CoinApp.java,b\9\b9f5b3ea02813ab50c6af12431f7f7814763a72f
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+e
+5src/main/java/com/javastart/loops/ForEachProblem.java,b\6\b6f7fab61f584a12a29fbe1f42fb5d256d656f00
