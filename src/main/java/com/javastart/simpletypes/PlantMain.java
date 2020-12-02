@@ -1,4 +1,4 @@
-package com.javastart.excercises;
+package com.javastart.simpletypes;
 
 public class PlantMain {
 

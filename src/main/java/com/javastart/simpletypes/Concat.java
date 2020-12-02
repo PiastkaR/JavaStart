@@ -1,4 +1,4 @@
-package com.javastart.excercises;
+package com.javastart.simpletypes;
 
 public class Concat {
     public static void main(String[] args) {

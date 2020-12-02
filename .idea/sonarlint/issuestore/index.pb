@@ -87,3 +87,13 @@ k
 ;src/main/java/com/javastart/statics/kitchen/KitchenApp.java,d\7\d79ea7e8cd10fa2417ab978babdd4add4c4ed4e6
 `
 0src/main/java/com/javastart/statics/car/Car.java,3\4\340ec1a8e32320b3c6555fd1876e9f18107aef91
+d
+4src/main/java/com/javastart/statics/car/CarTest.java,9\8\98e43d85db51e797fa0d8fcd2a4507711261e434
+s
+Csrc/main/java/com/javastart/algorythms/MultiplicationExercises.java,a\1\a11320f0c35618e58eb0c428b26b66e4b4590aa1
+e
+5src/main/java/com/javastart/supersuper/AppleTest.java,6\a\6a0146f7cbb9a372efed07e415ec05dd88717d61
+a
+1src/main/java/com/javastart/supersuper/Fruit.java,5\8\580ddc4406bb27f0e11d908502958f2a8c53eda1
+a
+1src/main/java/com/javastart/supersuper/Apple.java,7\c\7c9ee628537533ec216535578cfaa3b9fc6bfa40
