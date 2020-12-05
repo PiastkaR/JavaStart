@@ -1,5 +1,7 @@
 package com.javastart.objects.bank;
 
+import java.util.Objects;
+
 class Address {
     private String city;
     private String street;
@@ -13,6 +15,20 @@ class Address {
         this.postalCode = postalCode;
         this.homeNo = homeNo;
         this.flatNo = flatNo;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
+        Address thatAddress = (Address) o;
+        return Objects.equals(city, thatAddress.city) &&
+                Objects.equals(street, thatAddress.street) &&
+                Objects.equals(postalCode, thatAddress.postalCode) &&
+                Objects.equals(homeNo, thatAddress.homeNo) &&
+                Objects.equals(flatNo, thatAddress.flatNo);
     }
 
     public String getCity() {

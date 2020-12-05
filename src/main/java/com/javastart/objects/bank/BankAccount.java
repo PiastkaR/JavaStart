@@ -44,8 +44,8 @@ BankAccount {
         if (o == null || getClass() != o.getClass()) return false;
         BankAccount that = (BankAccount) o;
         return yearCreated == that.yearCreated &&
-                accountNumber == that.accountNumber &&
-                owner == that.owner;
+                Objects.equals(accountNumber, that.accountNumber) &&
+                Objects.equals(owner, that.owner);
     }
 
     @Override

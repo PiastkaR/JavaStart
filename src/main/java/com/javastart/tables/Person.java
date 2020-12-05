@@ -1,4 +1,4 @@
-package com.javastart.arrays;
+package com.javastart.tables;
 
 public class Person {
     private int id;

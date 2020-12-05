@@ -1,4 +1,4 @@
-package com.javastart.arrays;
+package com.javastart.tables;
 
 class ElevatorSimulator {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.javastart.arrays;
+package com.javastart.tables;
 
 public class Elevator {
     private Person[] people = new Person[4];

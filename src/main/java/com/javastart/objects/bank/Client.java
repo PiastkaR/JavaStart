@@ -49,7 +49,13 @@ class Client {
 
     @Override
     public boolean equals(Object o) {
-        return this.hashCode() == o.hashCode();
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Client client = (Client) o;
+        return Objects.equals(firstName, client.firstName) &&
+                Objects.equals(lastName, client.lastName) &&
+                Objects.equals(id, client.id) &&
+                Objects.equals(address, client.address);
     }
 
     @Override
