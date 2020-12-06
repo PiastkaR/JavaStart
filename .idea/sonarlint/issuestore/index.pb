@@ -98,3 +98,13 @@ i
 .src/main/java/com/javastart/tables/Person.java,5\b\5bc2d09f7c43a840757b3d0a4dd9cb1fbb328256
 e
 5src/main/java/com/javastart/objects/bank/Address.java,a\b\abfd097183f8fa0523eb814e1ebb58844fde3d20
+j
+:src/main/java/com/javastart/enumss/internetshop/Order.java,9\d\9d9aca724c246e02832658b5e4c522a9c68f8eb4
+p
+@src/main/java/com/javastart/enumss/internetshop/OrderStatus.java,3\c\3cd10dd03349e71b6f03195312f76ccb6833f94f
+f
+6src/main/java/com/javastart/enumss/pizzeria/Pizza.java,3\5\358affb3ecae07d56b0cf54dc11308d27cefde7c
+i
+9src/main/java/com/javastart/enumss/pizzeria/Pizzeria.java,e\a\eaf58e393d6e4534c2ad36fef51cc22b1a77809c
+i
+9src/main/java/com/javastart/enumss/internetshop/Shop.java,9\e\9ebcce33fb930940254b053c05211152741b854c

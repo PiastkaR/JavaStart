@@ -21,6 +21,7 @@ public class Shop {
         Order order = new Order();
 
         System.out.println("Getting orders with given status: " + orderStatus);
+
         Order[] ordersWithGivenStatus = order.getOrdersWithGivenStatus(orders, orderStatus);
 
         System.out.println("Orders with given status: ");
