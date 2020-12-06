@@ -108,3 +108,7 @@ i
 9src/main/java/com/javastart/enumss/pizzeria/Pizzeria.java,e\a\eaf58e393d6e4534c2ad36fef51cc22b1a77809c
 i
 9src/main/java/com/javastart/enumss/internetshop/Shop.java,9\e\9ebcce33fb930940254b053c05211152741b854c
+[
++src/main/java/com/javastart/strings/Sb.java,a\7\a7a1c4f07a99c7dd7a095b0cf18b968f8029eb08
+p
+@src/main/java/com/javastart/strings/StringBuilderExcercises.java,a\4\a4727da09ac54962b3eeae21bd82a532ad5847b2
