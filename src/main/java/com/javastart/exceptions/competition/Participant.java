@@ -42,6 +42,8 @@ class Participant {
     }
 
     public void setAge(int age) {
+        if (age < 0)
+            throw new IllegalArgumentException("Age has to be positive number");
         this.age = age;
     }
 

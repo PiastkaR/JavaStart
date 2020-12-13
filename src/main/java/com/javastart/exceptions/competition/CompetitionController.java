@@ -1,5 +1,6 @@
 package com.javastart.exceptions.competition;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 class CompetitionController {
@@ -12,11 +13,11 @@ class CompetitionController {
     }
 
     private Competition createCompetition() {
-        System.out.println("Podaj nazwę zawodów:");
+        System.out.println("Competition Name:");
         String competitionName = scanner.nextLine();
-        System.out.println("Podaj maksymalną liczbę uczestników:");
+        System.out.println("Max competitors No:");
         int maxParticipants = scanner.nextInt();
-        System.out.println("Podaj ograniczenie wiekowe:");
+        System.out.println("Age limit:");
         int ageLimit = scanner.nextInt();
         scanner.nextLine();
         return new Competition(competitionName, maxParticipants, ageLimit);
@@ -24,26 +25,46 @@ class CompetitionController {
 
     private void fillParticipantsInfo(Competition competition) {
         while (competition.hasFreeSpots()) {
-            System.out.println("Dodaj nowego uczestnika");
+            System.out.println("Add new participant");
             Participant participant = createParticipant();
-            competition.addParticipant(participant);
+            try {
+                competition.addParticipant(participant);
+            } catch (AgeViolationException | DuplicateException | MaxCompetitorsException exception) {
+                System.err.println(String.format("Error Occurred: '%s' ", exception));
+            }
         }
     }
 
     private Participant createParticipant() {
-        System.out.println("Podaj imię:");
+        System.out.println("Name:");
         String firstName = scanner.nextLine();
-        System.out.println("Podaj nazwisko:");
+        System.out.println("Surname:");
         String lastName = scanner.nextLine();
-        System.out.println("Podaj id (np. pesel):");
+        System.out.println("Id:");
         String id = scanner.nextLine();
-        System.out.println("Podaj wiek:");
-        int age = scanner.nextInt();
+        System.out.println("Age:");
+        int age = readPositiveNumber();
         scanner.nextLine();
         return new Participant(firstName, lastName, id, age);
     }
 
     private void printCompetition(Competition competition) {
         System.out.println(competition.toString());
+    }
+
+    private int readPositiveNumber() {
+        int number = -1;
+        while (number < 0) {
+            try {
+                number = scanner.nextInt();
+                if (number < 0)
+                    System.out.println("Podana liczba musi być dodatnia");
+            } catch (InputMismatchException e) {
+                System.out.println("Musisz podać liczbę, spróbuj ponownie.");
+            } finally {
+                scanner.nextLine();
+            }
+        }
+        return number;
     }
 }

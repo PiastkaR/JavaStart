@@ -8,20 +8,27 @@ class Competition {
 
     public Competition(String name, int maxParticipants, int ageLimit) {
         this.name = name;
+        if (ageLimit < 0) {
+            throw new IllegalArgumentException("ageLimit has to be positive number");
+        }
         this.ageLimit = ageLimit;
         this.participants = new Participant[maxParticipants];
     }
 
     void addParticipant(Participant participant) {
-        try{
-            if(participant.getAge() < ageLimit) {
-               throw new AgeViolationException(ageLimit, );
-            }
-            participants[size] = participant;
-            size++;
-        } catch(AgeViolationException exception) {
-
+        if (participant.getAge() < ageLimit) {
+            throw new AgeViolationException(String.format("Only participants above: '%s' are allowed.", ageLimit), ageLimit);
         }
+        if (participants.length == size) {
+            throw new MaxCompetitorsException(String.format("Max participants number was exceeded. Only: '%s' are allowed.", size), size);
+        }
+        for (Participant value : participants) {
+            if (value.getDocumentId().equals(participant.getDocumentId()))
+                throw new DuplicateException(String.format("Participant: '%s' already exist.", participant), participant);
+        }
+
+        participants[size] = participant;
+        size++;
     }
 
     boolean hasFreeSpots() {

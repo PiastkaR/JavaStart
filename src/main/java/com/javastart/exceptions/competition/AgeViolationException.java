@@ -1,7 +1,10 @@
 package com.javastart.exceptions.competition;
 
-public class AgeViolationException extends Exception {
-    public AgeViolationException(int ageLimit, Exception exception) {
-        super(String.format("The age limit is: %s ", ageLimit), exception);
+public class AgeViolationException extends RuntimeException {
+    private int ageLimit;
+
+    public AgeViolationException(String message, int ageLimit) {
+        super(message);
+        this.ageLimit = ageLimit;
     }
 }
