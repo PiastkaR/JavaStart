@@ -1,4 +1,4 @@
-package com.javastart.abstractclass.salery;
+package com.javastart.abstractclass.salary;
 
 public abstract class Employee {
     private String name;
