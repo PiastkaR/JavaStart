@@ -12,6 +12,7 @@ class ObjectReader {
         try (
                 var fis = new FileInputStream(fileName);
                 var ois = new ObjectInputStream(fis);
+                //zeby plik byl do odczytania musi byc zparsowany! naleazy zwsze uzywac metod tego samego typu tj. file reader/ writer. object reader/writer
         ) {
             p1 = (Person) ois.readObject();
         } catch (ClassNotFoundException | IOException e) {
