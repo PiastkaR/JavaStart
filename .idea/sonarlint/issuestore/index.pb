@@ -209,3 +209,27 @@ Asrc/main/java/com/javastart/serialization/BufferedReaderCase.java,f\3\f3b3fdc4
 person.txt,2\1\2143905746c5d4f60466ded5100cd95d1fe67487
 o
 ?src/main/java/com/javastart/serialization/client/ClientApp.java,4\7\476e6a3d07442eab4b0534fcde215be82fdc9f42
+j
+:src/main/java/com/javastart/recurence/DirectoryLister.java,a\4\a4f0b7c64dd1085fcd1202344ca369ae968e1f53
+f
+6src/main/java/com/javastart/recurence/NumberAdder.java,f\d\fd902844b85d3825b6e36d8cdeb456ba6e75b564
+k
+;src/main/java/com/javastart/recurence/shopping/Product.java,8\c\8ced793378cd33be344db62992f5394f204c44ea
+d
+4src/main/java/com/javastart/recurence/Factorial.java,f\2\f296d2d9cfe7daf309c296107c5a60964a97ae73
+h
+8src/main/java/com/javastart/recurence/shopping/Cart.java,a\8\a8709faaf1299556c68af7e1d2b511c2e15e3e83
+d
+4src/main/java/com/javastart/wrappers/BigNumbers.java,5\8\58daaa5255b13861a7dda703a3872d6091c49fd1
+h
+8src/main/java/com/javastart/wrappers/MathOperations.java,c\f\cfd286c55584be9b144cc56d5205d5b4df85229c
+l
+<src/main/java/com/javastart/recurence/shopping/CartTest.java,7\0\70b6156c439a4ebf7f3272ddc0f0c8c8d46a4c00
+h
+8src/main/java/com/javastart/wrappers/sum/Calculator.java,6\e\6e2c43c31a19913820938bb4ec815ea18b1101ab
+9
+	numbers.s,a\c\ac39e60426d205b9e1bc6cb1c6e713ec2caca967
+h
+8src/main/java/com/javastart/wrappers/sum/SummingApp.java,f\7\f76027f1b13c0c1686d4a0236b400d7ee1d78b46
+i
+9src/main/java/com/javastart/wrappers/sum/FileManager.java,7\c\7c8dc98f93c06efbc58ffb489410d1e10a073726
