@@ -1,6 +1,7 @@
 package com.javastart.comparableandcomparator;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 class ProductCatalog {
     public static void main(String[] args) {
@@ -17,11 +18,23 @@ class ProductCatalog {
         for (Product p : products) {
             System.out.println(p);
         }
-
-        Arrays.sort(products);
+        //TODO przykald z kalsa anonimowa:
+        Arrays.sort(products, new Comparator<Product>() {
+            @Override
+            public int compare(Product o1, Product o2) {
+                return o1.getProducer().compareTo(o2.getProducer());
+            }
+        });
         System.out.println("Posortowana: ");
         for (Product p : products) {
             System.out.println(p);
         }
+//TODO przyklad z klasa zagniezdona
+//        Product.ProductNameComparator productNameComparator = new Product.ProductNameComparator();
+//        Arrays.sort(products, productNameComparator);
+//        System.out.println("Posortowana: ");
+//        for (Product p : products) {
+//            System.out.println(p);
+//        }
     }
 }
