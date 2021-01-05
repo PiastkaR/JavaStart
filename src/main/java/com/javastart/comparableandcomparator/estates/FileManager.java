@@ -16,23 +16,23 @@ public class FileManager implements Serializable {
         }
     }
 
-    public EstateAgency readFile(String fileName) {
+    public Estate[] readFile(String fileName) {
         int fileLines = countFileLines(fileName);
-//        Estate[] estates = new Estate[fileLines];
-        EstateAgency estateAgency = new EstateAgency(new Estate[fileLines]);
+//        EstateAgency estateAgency = new EstateAgency(new Estate[fileLines]);
+        Estate[] estates = new Estate[fileLines];
         try (
                 Scanner scanner = new Scanner(new File(fileName))
         ) {
             scanner.nextLine();//skip header
-            for (int i = 0; i <= fileLines; i++) {
+            for (int i = 0; i < fileLines; i++) {
                 String line = scanner.nextLine();
-                estateAgency.addEstate(createEstate(line));//[i] = createEstate(line);
+                estates[i] = createEstate(line);
             }
 
         } catch (FileNotFoundException e) {
             throw new FileImportException(fileName);
         }
-        return estateAgency;
+        return estates;
     }
 
     private int countFileLines(String fileName) {

@@ -41,12 +41,16 @@ public class Estate implements Comparable<Estate> {
 
     @Override
     public String toString() {
-        return "City: " + city + "Price: " + price + " Sq meters:" + squareMeters + "Price/sqr mtrs: " + calculatePriceForSquareMeters();
+        return "City: " + city + "Price: " + price + " Sq meters:" + squareMeters + "Price/sqr mtrs: " + price / squareMeters;
     }
 
     @Override
     public int compareTo(Estate o) {
-        if (price / squareMeters > o.price / o.squareMeters) ;
-        return 1;
+        if (calculatePriceForSquareMeters() > o.calculatePriceForSquareMeters())
+            return 1;
+        else if (calculatePriceForSquareMeters() < o.calculatePriceForSquareMeters())
+            return -1;
+        else
+            return 0;
     }
 }

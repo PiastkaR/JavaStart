@@ -4,19 +4,20 @@ import java.util.Arrays;
 
 public class EstateAgency {
     private Estate[] estates = new Estate[10];
+    private int emptyTable;
 
     public EstateAgency(Estate[] estates) {
         this.estates = estates;
     }
 
-    public void addEstate(Estate estate) {
+    public Estate addEstate(Estate estate) {
         for (int i = 0; i < estates.length; i++) {
-//            if (estates[i] == estates[estates.length] && estates[i] != null) {
-//                Arrays.copyOf(estates, estates.length * 2);
-//            }
+            if (emptyTable == estates.length) {
+                Arrays.copyOf(estates, estates.length * 2);
+            }
             estates[i] = estate;
-            //TODO? probably have to add variable with counter for estates like emptyEstates int..
         }
+        return estate;
     }
 
     @Override
