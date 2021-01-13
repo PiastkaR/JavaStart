@@ -162,3 +162,13 @@ Tsrc/main/java/com/javastart/comparableandcomparator/estates/FileImportException
 Lsrc/main/java/com/javastart/comparableandcomparator/estates/FileManager.java,2\a\2a77d5749b32e0e7eb6603977db082e3f4ced367
 {
 Ksrc/main/java/com/javastart/comparableandcomparator/estates/EstatesApp.java,7\2\7293b4d47a3ab10af91edea71c3b8cc25670becf
+Ž
+^src/main/java/com/javastart/comparableandcomparator/estates/PriceToSquareMetersComparator.java,b\1\b1ab8f24a1d12ba8a20f16a545aaa6f3c222ec67
+b
+2src/main/java/com/javastart/collections/Lists.java,6\7\671c3c7ed65724d138e2aa5d65fb2b896435eef2
+d
+4src/main/java/com/javastart/collections/ArrTest.java,8\b\8b38e4d94bb4b23f946919915eba54e9e8bdcd38
+m
+=src/main/java/com/javastart/collections/PolymorphicLists.java,1\4\140c3d79759abec54dce359f352533b711a1a285
+w
+Gsrc/main/java/com/javastart/collections/lists/addition/AdditionApp.java,0\3\035043b25a26baa33e51128e148074f9b71feb36
