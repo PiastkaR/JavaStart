@@ -1,30 +1,48 @@
 package com.javastart.collections.lists.addition;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class AdditionApp {
-    static final String EXIT = "exit";
+    public static final String EXIT = "exit";
+    private static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        String input = scanner.nextLine();
-        ArrayList<Double> array = new ArrayList<>();
-        do {
-            try {
-                readValueFromUser(array);
-            } catch (NumberFormatException exception) {
-                System.err.println("Please use NUMBERS only!");
-            }
-        } while (input.equals(EXIT));
-
-        scanner.close();
+        List<Double> numbers = new ArrayList<>();
+        fillList(numbers);
+        printData(numbers);
     }
 
-    private static void readValueFromUser(ArrayList<Double> list, String input) {
-        System.out.println("Please write any number or 'exit' to leave the program.");
-        Double number = Double.valueOf(input);
-        list.add(number);
+    static void fillList(List<Double> list) {
+        System.out.println("Input another number or write \"exit\": ");
+
+        String input = sc.nextLine();
+        if (input.equals(AdditionApp.EXIT))
+            return;
+
+        try {
+            Double num = Double.valueOf(input);
+            list.add(num);
+        } catch (NumberFormatException e) {
+            System.err.println("Please give only numbers!");
+        }
+
+        fillList(list);
+    }
+
+    static void printData(List<Double> list) {
+        double sum = 0;
+        if (!list.isEmpty()) {
+            StringBuilder sb = new StringBuilder();
+            for (Double number : list) {
+                sb.append(number);
+                sb.append("+");
+                sum = sum + number;
+            }
+            sb.replace(sb.length() - 1, sb.length(), "=");
+            sb.append(sum);
+            System.out.println(sb.toString());
+        }
     }
 }
