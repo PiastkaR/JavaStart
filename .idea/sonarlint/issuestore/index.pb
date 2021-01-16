@@ -277,3 +277,11 @@ Lsrc/main/java/com/javastart/comparableandcomparator/estates/FileManager.java,2
 Ksrc/main/java/com/javastart/comparableandcomparator/estates/EstatesApp.java,7\2\7293b4d47a3ab10af91edea71c3b8cc25670becf
 w
 Gsrc/main/java/com/javastart/collections/lists/addition/AdditionApp.java,0\3\035043b25a26baa33e51128e148074f9b71feb36
+y
+Isrc/main/java/com/javastart/collections/lists/addition/DividedByFive.java,5\0\504ccb59e1b04eaa424e911783eb2ac9847777c1
+h
+8src/main/java/com/javastart/collections/sets/Person.java,8\c\8c292f03bed713a1b5c667074e34e71c3009b50e
+k
+;src/main/java/com/javastart/collections/sets/PersonSet.java,a\4\a4391c9510165bb974238fd5e2c634e076663e6f
+m
+=src/main/java/com/javastart/collections/sets/SetsExample.java,7\3\73a92b80f4d826ac012d9ee1d82a1b221a8a3aa1
