@@ -285,3 +285,13 @@ k
 ;src/main/java/com/javastart/collections/sets/PersonSet.java,a\4\a4391c9510165bb974238fd5e2c634e076663e6f
 m
 =src/main/java/com/javastart/collections/sets/SetsExample.java,7\3\73a92b80f4d826ac012d9ee1d82a1b221a8a3aa1
+n
+>src/main/java/com/javastart/collections/sets/shop/Product.java,3\8\38add425ccfba24c3270a2e2c9cc85909a455d08
+q
+Asrc/main/java/com/javastart/collections/sets/shop/ProductApp.java,7\e\7e923e189d2b9c8f631dcdf124a4d1efb86b4476
+j
+:src/main/java/com/javastart/collections/maps/Employee.java,d\9\d9325592b65a4dc362c3c92e4e6446d9f3a44161
+i
+9src/main/java/com/javastart/collections/maps/Company.java,4\f\4feed2bfd69e3a60fae77b4fdadaed1514e03a46
+l
+<src/main/java/com/javastart/collections/maps/CompanyApp.java,4\f\4feb04997598c5a70df3abe5d6c1012b32aa429a

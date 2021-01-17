@@ -4,64 +4,89 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-import static java.lang.System.out;
-
 public class ProductApp {
-    private static final String EXIT = "exit";
-    private static final String ADD = "add";
+    private static final int ADD_PRODUCT = 0;
+    private static final int EXIT = 1;
+    private static final int DISCARD_PRODUCT = 0;
+    private static final int REPLACE_PRODUCT = 1;
+
+    private static Set<Product> products = new HashSet<>();
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Set<Product> products = new HashSet<>();
-        runProgram(products);
+        mainLoop();
     }
 
-    private static void runProgram(Set<Product> products) {
-        out.println("Please 'add' new product or 'exit'.");
-        String line = scanner.nextLine();
+    private static void mainLoop() {
+        int option;
         do {
-                addProduct(products);
-                scanner.nextLine();
-        }
-        while (!line.equals(EXIT));
-        printProducts(products);
-        out.println("Exiting program...");
+            printOptions();
+            option = readOption();
+            evaluateOption(option);
+        } while (option != EXIT);
     }
 
-    private static void addProduct(Set<Product> products) {
+    private static void printOptions() {
+        System.out.println("Dostępne opcje:");
+        System.out.println(" > Dodaj nowy produkt - " + ADD_PRODUCT);
+        System.out.println(" > Koniec programu - " + EXIT);
+    }
+
+    private static int readOption() {
+        System.out.println("Wybierz opcję:");
+        int option = scanner.nextInt();
+        scanner.nextLine();
+        return option;
+    }
+
+    private static void evaluateOption(int option) {
+        if (option == ADD_PRODUCT)
+            addNextProduct();
+        else if (option == EXIT)
+            printProducts();
+        else
+            System.out.println("Nieznana opcja");
+    }
+
+    private static void printProducts() {
+        System.out.println("Wszystkie produkty:");
+        for (Product product : products) {
+            System.out.println(product);
+        }
+    }
+
+    private static void addNextProduct() {
         Product product = createProduct();
         if (products.contains(product)) {
-            askToReplace(products, product);
+            askAndReplaceProduct(product);
+        } else {
+            addProduct(product);
         }
-        products.add(product);
     }
 
     private static Product createProduct() {
-        out.println("Please enter product name and price.");
+        System.out.println("Podaj nazwę produktu:");
         String name = scanner.nextLine();
+        System.out.println("Podaj cenę produktu:");
         double price = scanner.nextDouble();
-
         return new Product(name, price);
     }
 
-    private static void askToReplace(Set<Product> products, Product product) {
-        out.println("This product exists. Do you want to override? y/n");
-        String line = scanner.nextLine();
-        switch (line) {
-            case ("y"):
-                products.remove(product);
-                addProduct(products);
-                break;
-            case ("n"):
-                out.println("Product not added.");
-                break;
-            default:
-                out.println("Product not override.");
-        }
+    private static void askAndReplaceProduct(Product product) {
+        System.out.println("Znaleziono produkt o takiej nazwie, wybierz co chcesz zrobić");
+        System.out.println(" > Zignoruj produkt - " + DISCARD_PRODUCT);
+        System.out.println(" > Nadpisz produkt - " + REPLACE_PRODUCT);
+        int option = readOption();
+        scanner.nextLine();
+        if (option == REPLACE_PRODUCT) {
+            products.remove(product);
+            addProduct(product);
+        } else
+            System.out.println("W bazie pozostawiono poprzedni produkt");
     }
 
-    private static void printProducts(Set<Product> products) {
-        out.println("All added products: " + products.toString());
-        System.exit(0);
+    private static void addProduct(Product product) {
+        products.add(product);
+        System.out.println("Produkt dodany do bazy");
     }
 }
