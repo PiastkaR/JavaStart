@@ -1,6 +1,6 @@
 
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ÇåÑşÿÿÿÿ8¾ÌÜÖ.
 ƒ
 java:S4165"aRemove this useless assignment; "top" already holds the assigned value along all execution paths.(¡½Îøÿÿÿÿ8ÔÍµÜÖ.
 I
 java:S1172"-Remove this unused method parameter "number".(åô§n8ÔÍµÜÖ.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ÇåÑşÿÿÿÿ8¾ÌÜÖ.
