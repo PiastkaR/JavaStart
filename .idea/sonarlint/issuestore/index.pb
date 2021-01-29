@@ -369,3 +369,11 @@ m
 =src/main/java/com/javastart/streams/soccer/FootballMatch.java,4\a\4a134c87827ba61fbc81cb18b9a39224064430ca
 k
 ;src/main/java/com/javastart/streams/soccer/FootballApp.java,6\1\612568e8f334b76f5cdb20bf86ce60c1ce609feb
+p
+@src/main/java/com/javastart/streamcollections/NumberStreams.java,0\a\0aad2580a350b73c7139ce09f8271586b8fa16f7
+q
+Asrc/main/java/com/javastart/streamcollections/MultiThreadApp.java,b\c\bc434322afa01ce4959c234c610cf85777b78104
+>
+loremIpsum.txt,6\9\6954151950685931a9704997538bbe8ef7573c4f
+w
+Gsrc/main/java/com/javastart/streamcollections/readfile/ReadFileApp.java,3\2\32635a24bae0358f8a86b76e05c5f024a2d59ecc
