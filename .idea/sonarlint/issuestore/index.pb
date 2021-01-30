@@ -377,3 +377,7 @@ Asrc/main/java/com/javastart/streamcollections/MultiThreadApp.java,b\c\bc434322
 loremIpsum.txt,6\9\6954151950685931a9704997538bbe8ef7573c4f
 w
 Gsrc/main/java/com/javastart/streamcollections/readfile/ReadFileApp.java,3\2\32635a24bae0358f8a86b76e05c5f024a2d59ecc
+l
+<src/main/java/com/javastart/streamcollections/song/Song.java,f\4\f45323b52e722e2aa6d2570edbc0e926d9ecefb4
+w
+Gsrc/main/java/com/javastart/streamcollections/song/MusicCollection.java,0\4\04032b32a982f57dadb6817d79d20a29be742ea0

@@ -5,6 +5,7 @@ import java.util.stream.Collectors;
 
 import static com.javastart.streamcollections.song.Song.Genre.POP;
 
+
 class MusicCollection {
     public static void main(String[] args) {
         List<Song> songs = List.of(
