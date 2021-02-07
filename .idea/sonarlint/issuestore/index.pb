@@ -433,3 +433,7 @@ j
 :src/main/java/com/javastart/multithread/RaceCondition.java,5\3\53810c557f462396fc164117967d63fb69ee4265
 d
 4src/main/java/com/javastart/multithread/Counter.java,6\b\6be7d41d8cb9a2c8c65e0b69f2699e6170f16114
+s
+Csrc/main/java/com/javastart/multithread/NativeConsumerProducer.java,f\d\fd432ec032a7b5ee7f95f6e76099a4507214cfee
+l
+<src/main/java/com/javastart/multithread/VolatileExample.java,e\7\e799a81951ff21d093fa00ebe4ac4d4d2dd72bcf
